@@ -61,5 +61,3 @@ def markov():
         return prob_dict
     else:
         return 'Error: Invalid probability values in Markov Chain data file.'
-
-print markov()
