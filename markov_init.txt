@@ -1,3 +1,137 @@
-(1,1) .5
-(1,2) .4
-(1,3) .1
+# Markov Chain Probability Data
+#
+# Comments in this file are denoted with "#"
+#
+#
+# Interpretation: (a,b) x
+# x is the probability of moving from a to b
+#
+#
+(I,I) 0
+(I,I6) .05
+(I,ii) .12
+(I,ii6) .13
+(I,iii) .04
+(I,IV) .20
+(I,V) .20
+(I,CAD64) 0
+(I,vi) .15
+(I,vii0) .01
+(I,vii06) .1
+#
+#
+(I6,I) 0
+(I6,I6) 0
+(I6,ii) 0
+(I6,ii6) .50
+(I6,iii) 0
+(I6,IV) .50
+(I6,V) 0
+(I6,CAD64) 0
+(I6,vi) 0
+(I6,vii0) 0
+(I6,vii06) 0
+#
+#
+(ii,I) 0
+(ii,I6) 0
+(ii,ii) 0
+(ii,ii6) 0
+(ii,iii) 0
+(ii,IV) 0
+(ii,V) .70
+(ii,CAD64) .20
+(ii,vi) 0
+(ii,vii0) .10
+(ii,vii06) 0
+#
+#
+(iii,I) 0
+(iii,I6) 0
+(iii,ii) 0
+(iii,ii6) .10
+(iii,iii) 0
+(iii,IV) .10
+(iii,V) 0
+(iii,CAD64) 0
+(iii,vi) .80
+(iii,vii0) .10
+(iii,vii06) 0
+#
+#
+(IV,I) .10
+(IV,I6) 0
+(IV,ii) .40
+(IV,ii6) 0
+(IV,iii) 0
+(IV,IV) 0
+(IV,V) .20
+(IV,CAD64) .20
+(IV,vi) 0
+(IV,vii0) .10
+(IV,vii06) 0
+#
+#
+(V,I) .80
+(V,I6) 0
+(V,ii) 0
+(V,ii6) 0
+(V,iii) 0
+(V,IV) 0
+(V,V) 0
+(V,CAD64) 0
+(V,vi) .20
+(V,vii0) 0
+(V,vii06) 0
+#
+#
+(CAD64,I) 0
+(CAD64,I6) 0
+(CAD64,ii) 0
+(CAD64,ii6) 0
+(CAD64,iii) 0
+(CAD64,IV) 0
+(CAD64,V) 1
+(CAD64,CAD64) 0
+(CAD64,vi) 0
+(CAD64,vii0) 0
+(CAD64,vii06) 0
+#
+#
+(vi,I) 0
+(vi,I6) 0
+(vi,ii) .40
+(vi,ii6) .25
+(vi,iii) .05
+(vi,IV) .20
+(vi,V) .05
+(vi,CAD64) .05
+(vi,vi) 0
+(vi,vii0) 0
+(vi,vii06) 0
+#
+#
+(vii0,I) .20
+(vii0,I6) 0
+(vii0,ii) 0
+(vii0,ii6) 0
+(vii0,iii) 0
+(vii0,IV) 0
+(vii0,V) .80
+(vii0,CAD64) 0
+(vii0,vi) 0
+(vii0,vii0) 0
+(vii0,vii06) 0
+#
+#
+(vii06,I) 0
+(vii06,I6) 1
+(vii06,ii) 0
+(vii06,ii6) 0
+(vii06,iii) 0
+(vii06,IV) 0
+(vii06,V) 0
+(vii06,CAD64) 0
+(vii06,vi) 0
+(vii06,vii0) 0
+(vii06,vii06) 0
