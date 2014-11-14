@@ -7,12 +7,12 @@
 # x is the probability of moving from a to b
 #
 #
-(I,I) 0
+(I,I) .05
 (I,I6) .05
 (I,ii) .12
 (I,ii6) .13
 (I,iii) .04
-(I,IV) .20
+(I,IV) .15
 (I,V) .20
 (I,CAD64) 0
 (I,vi) .15
