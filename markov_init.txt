@@ -1,7 +1,7 @@
 # Markov Chain Probability Data
 #
 # Comments in this file are denoted with "#"
-#
+# Each section must be delimited by a single line with @ in order for checking functions to work
 #
 # Interpretation: (a,b) x
 # x is the probability of moving from a to b
@@ -19,6 +19,7 @@
 (I,vii0) .01
 (I,vii06) .1
 #
+@
 #
 (I6,I) 0
 (I6,I6) 0
@@ -32,6 +33,7 @@
 (I6,vii0) 0
 (I6,vii06) 0
 #
+@
 #
 (ii,I) 0
 (ii,I6) 0
@@ -45,6 +47,7 @@
 (ii,vii0) .10
 (ii,vii06) 0
 #
+@
 #
 (iii,I) 0
 (iii,I6) 0
@@ -55,9 +58,10 @@
 (iii,V) 0
 (iii,CAD64) 0
 (iii,vi) .80
-(iii,vii0) .10
+(iii,vii0) 0
 (iii,vii06) 0
 #
+@
 #
 (IV,I) .10
 (IV,I6) 0
@@ -71,6 +75,7 @@
 (IV,vii0) .10
 (IV,vii06) 0
 #
+@
 #
 (V,I) .80
 (V,I6) 0
@@ -84,6 +89,7 @@
 (V,vii0) 0
 (V,vii06) 0
 #
+@
 #
 (CAD64,I) 0
 (CAD64,I6) 0
@@ -97,6 +103,7 @@
 (CAD64,vii0) 0
 (CAD64,vii06) 0
 #
+@
 #
 (vi,I) 0
 (vi,I6) 0
@@ -110,6 +117,7 @@
 (vi,vii0) 0
 (vi,vii06) 0
 #
+@
 #
 (vii0,I) .20
 (vii0,I6) 0
@@ -123,6 +131,7 @@
 (vii0,vii0) 0
 (vii0,vii06) 0
 #
+@
 #
 (vii06,I) 0
 (vii06,I6) 1
@@ -135,3 +144,6 @@
 (vii06,vi) 0
 (vii06,vii0) 0
 (vii06,vii06) 0
+#
+@
+#
