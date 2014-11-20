@@ -49,6 +49,20 @@
 #
 @
 #
+(ii6,I) .10
+(ii6,I6) 0
+(ii6,ii) .40
+(ii6,ii6) 0
+(ii6,iii) 0
+(ii6,IV) 0
+(ii6,V) .20
+(ii6,CAD64) .20
+(ii6,vi) 0
+(ii6,vii0) .10
+(ii6,vii06) 0
+#
+@
+#
 (iii,I) 0
 (iii,I6) 0
 (iii,ii) 0
