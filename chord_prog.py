@@ -15,7 +15,7 @@ def next_chord(last, dict):
         prob_list.append(dict[(last, chord)])
     prob_list = make_cumulative(prob_list)
     rand_num = random()
-    index = 0
+    index = 1
     while True:
         if prob_list[index] >= rand_num:
             break
@@ -42,14 +42,27 @@ def make_cumulative(list, total = 0, index = 0):
 
 def chord_prog(num_chords):
     markov_dict = markov_chain.markov()
-    chords = []
-    last_chord = choice(["I", "I6", "ii", "ii6", "iii", "IV", "V", "CAD64", "vi", "vii0", "vii06"])
+    chords = ["I"]
+    last_chord = "I"
     while num_chords > 0:
         chord = next_chord(last_chord, markov_dict)
         chords.append(chord)
         last_chord = chord
         num_chords -= 1
     return chords
+
+
+def get_notes(chord):
+    note_dict = dict(I=[1, 1, 3, 5], ii=[2, 2, 4, 6], iii=[3, 3, 5, 7], IV=[4, 4, 6, 1], V=[5, 5, 7, 2], vi=[6, 6, 1, 3],
+                     vii0=[7, 7, 2, 4], CAD64=[5, 1, 3, 5], I6=[3, 1, 3, 5], vii06=[2, 7, 2, 4], ii6=[4, 2, 4, 6])
+    return note_dict[chord]
+
+
+def note_prog(chord_progression):
+    note_list = []
+    for chord in chord_progression:
+        note_list.append(get_notes(chord))
+    return note_list
 
 
 
