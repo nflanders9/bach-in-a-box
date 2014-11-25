@@ -1,4 +1,5 @@
 import markov_chain
+import progression_fixers
 from random import random, choice
 
 __author__ = 'Nick Flanders'
@@ -6,7 +7,6 @@ __author__ = 'Nick Flanders'
 # Generate a chord progression based on Markov probabilities
 
 # Call on chord_prog(<number of chords>) to create a sequential chord progression list
-
 
 def next_chord(last, dict):
     chord_list = ["I", "I6", "ii", "ii6", "iii", "IV", "V", "CAD64", "vi", "vii0", "vii06"]
@@ -41,6 +41,7 @@ def make_cumulative(list, total = 0, index = 0):
 
 
 def chord_prog(num_chords):
+    num_desired = num_chords
     markov_dict = markov_chain.markov()
     chords = ["I"]
     last_chord = "I"
@@ -50,6 +51,7 @@ def chord_prog(num_chords):
         last_chord = chord
         num_chords -= 1
     return chords
+
 
 
 def get_notes(chord):
@@ -63,8 +65,6 @@ def note_prog(chord_progression):
     for chord in chord_progression:
         note_list.append(get_notes(chord))
     return note_list
-
-
 
 """
 Testing:
