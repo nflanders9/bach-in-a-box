@@ -1,6 +1,5 @@
 __author__ = 'Nick Flanders'
-import chord_prog
-import markov_chain
+import markov_chain, chord_prog
 # Correct any errors in the chord progression
 
 def cad64_5_1(prog):
@@ -33,11 +32,16 @@ def end_on_I(prog, dict):
             prog.append(chord_prog.next_chord(last_chord, dict))
     return prog
 
+def get_notes():
+    dictionary = markov_chain.markov()
+    return chord_prog.note_prog(end_on_I(cad64_5_1(chord_prog.chord_prog(8)), dictionary))
 
-"""
-for i in range(0, 10):
-    chords = chord_prog.chord_prog(8)
-    print chords
-    fixed = scan_prog(chords)
-    print fixed
-    """
+# Testing:
+dictionary = markov_chain.markov()
+chords = end_on_I(cad64_5_1(chord_prog.chord_prog(8)), dictionary)
+print "Chord representation:"
+print chords
+notes = chord_prog.note_prog(chords)
+print "Note progression:"
+print notes
+print get_notes()

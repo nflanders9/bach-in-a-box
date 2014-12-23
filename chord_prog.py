@@ -1,5 +1,4 @@
 import markov_chain
-import progression_fixers
 from random import random, choice
 
 __author__ = 'Nick Flanders'
